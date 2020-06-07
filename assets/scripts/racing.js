@@ -1,4 +1,4 @@
-$(document).ready( function () {
+$(function() {
     yearsSince1949();
     startCarousel();
     buildHTMLTable();
@@ -307,7 +307,7 @@ function getAllData(obj) {
     var tableRows = [];
         
         obj.forEach(function(item) {
-            var dataCol = [];
+            
 
             Object.keys(item).forEach(function(key) {
                 var dataCol = item[key].toString();
@@ -329,7 +329,7 @@ function getAllCountryCounts(obj, optionalArg = "Nation") {
         //alert(obj.length);
         
         obj.forEach(function(item) {
-            let dataLabels = [];
+          
 
             Object.keys(item).forEach(function(key) {
                
